@@ -49,18 +49,17 @@ body {
 }
 
 nav {
-      display: none;  
+  display: none;  
   width: 100%;
-    grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   justify-content: center;
   padding: 1%;
 }
- 
 
 nav ul {
   display: flex;
   justify-content: center;
-  margin: 5px
+  margin: 5px;
 }
 
 nav ul li {
@@ -70,7 +69,8 @@ nav ul li {
   font-weight: bold;
   cursor: pointer;
   padding: 5px 15px;
-  border-radius: 4px;}
+  border-radius: 4px;
+}
 
 .carousel {
   display: flex;
@@ -91,7 +91,6 @@ nav ul li {
   font-size: 20px;
   cursor: pointer;
   background-color: black;
-
   opacity: 0.8;
   position: absolute;
   left: 13px;
@@ -101,16 +100,13 @@ nav ul li {
 #btnR {
   padding: 1%;
   font-size: 20px;
-  font-size: large;
   cursor: pointer;
   background-color: black;
-
   opacity: 0.8;
   position: absolute;
   right: 13px;
   bottom: 40%;
 }
-
 
 .add-cart-btn {
   margin-top: 12px;
@@ -126,26 +122,19 @@ nav ul li {
   color: black;
 }
 
-
-.launch-container h1{
-
+.launch-container h1 {
   display: flex;
-    justify-content: center;
-    color: green;
-
+  justify-content: center;
+  color: green;
 }
 
-
-.launch-container{  
-  
+.launch-container {  
   max-width: 70%;
   justify-content: center;
   align-items: center;
   padding: 5px;
   margin: auto;
 }
-
-
 
 .products-container {
   max-width: 95%;
@@ -185,9 +174,8 @@ nav ul li {
   border-radius: 3%;
 }
 
-.launch-item
-{
-   display: flex;
+.launch-item {
+  display: flex;
   flex-direction: column;
   align-items: center;
   background-color: darkgray;
@@ -195,8 +183,7 @@ nav ul li {
   border-radius: 3%;   
 }
 
-.launch-item p
-{
+.launch-item p {
   margin-top: 8px;
   color: white; 
 }
@@ -209,6 +196,7 @@ nav ul li {
   padding: 2%;
   border-radius: 3%;
 }
+
 .item p {
   margin-top: 8px;
   color: darkslategray;
@@ -267,6 +255,7 @@ nav ul li {
   border-radius: 4px;
   border: 2px solid white;
 }
+
 #newsletter div input,
 button {
   padding: 10px;
@@ -292,10 +281,8 @@ button {
 
 #news-sub {
   position: absolute;
-
   height: 100%;
 }
-
 
 footer .footer-container {
   max-width: 95%;
@@ -310,10 +297,10 @@ footer li {
   list-style: none;
   margin-top: 5px;
 }
+
 footer li:hover {
   color: green;
   cursor: pointer;
-
 }
 
 footer strong {
@@ -336,108 +323,4 @@ footer strong {
   font-size: larger;
   gap: 4%;
   margin-top: 6%;
-  
-}
-
-
-
-/*applies to larger screens like laptops and desktops */
-
-
-@media (min-width: 1200px) {
-
-      #fa-bars, #fa-xmark {
-    display: none !important;
-  }
-      nav{
-    display: grid !important;
-  }
-}
-
-/* Tablet view */
-
-@media (max-width: 1200px) {
-
-
-  .products-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-   nav{
-    display: none;
-  } 
-
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .logo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-
-  .logo img {
-    width: 120px;
-    height: auto;
-  }
-
-  #fa-bars{
-    display: flex;
-    margin: auto;
-    position:absolute;
-    right: 40px;
-  }
-
-}
-
-/* Mobile view */
-@media (max-width: 768px) {
-  footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  footer .footer-container {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .products-container {
-    width: 100%;
-  }
-
-
-
-  .products-grid {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .launch-container {
-    max-width: 95%;
-  }
-  .launch-products {
-  grid-template-columns: 1fr;
-}
-
-.products-heading {
-  font-size: 24px;
-  text-align: center;
-
-}
-}
-
-/* very small mobile */
-
-
-@media (max-width: 568px) {
-    .products-grid {
-        grid-template-columns: 1fr;
-    }
-    
-    .launch-products {
-    grid-template-columns: 1fr;
-    }
 }
